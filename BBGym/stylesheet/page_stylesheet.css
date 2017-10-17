@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Abel|Ubuntu');
+
+/* Text */
+h1{
+    font-size: 2.6em; letter-spacing: .5em; color: #004C00; text-align: center;
+    margin-bottom: 1.8em;
+}
+h2{
+    font-size: 2.2em; text-align: center; letter-spacing: .5em; color: #004C00;
+    margin-bottom: .5em;
+}
+h3{
+    font-size: 1.6em; font-family: 'Ubuntu', sans-serif; font-weight: 300;  margin-bottom: 0;
+}
+h4{
+    font-size: 1.4em; text-align: center; line-height: 1.5em; letter-spacing: .2em;
+    margin: 0; position: relative;
+}
+
+p{ font-family: 'Ubuntu', sans-serif; line-height: 2em; text-align: justify; }
+
+
+/* Body */
+body {
+	font-size: 18px; font-family: 'Abel', sans-serif;
+    background-repeat: no-repeat; background-position: center top; background-color: #fff;
+    margin: 0;
+}
+body.home { overflow: hidden; }
+
+
+/* Header */
+header{ position: fixed; z-index: 2; width: 400px; padding: 30px 30px; margin: 0; }
+header a.logo { 
+    position: absolute; width: auto; height: 66px; 
+    display: block; top: 30px; left: 40px; 
+	font-weight: 700; font-size: 1.2em; letter-spacing: .3em; 
+	text-decoration: none; color: #004C00; 
+}
+
+
+/* Social media */
+div.socialmedia{ position: fixed; z-index: 2; width: 25%; padding-top: 25px; right: 30px; }
+div.socialmedia a img { display: inline; position: relative; padding-left: 10px; float: right; height: 1.8em; }
+div.socialmedia > p { font-family: 'Abel', sans-serif; color: #004C00; line-height: 0; text-align: right; }
+
+
+/* Navigation */
+nav { 
+	position: fixed; left:0px; right:0px;  
+	width: 100%; padding: 34px 0; margin: 0 auto;
+	font-size: .9em; text-align: center; z-index: 1;
+	background-color: rgba(255,255,255,.9); }
+nav ul { list-style: none; width: 100%; margin: 0; padding: 0; }
+nav > ul > li { display: inline; }
+nav > ul > li > a {
+	padding: 10px; margin: 0 30px; 
+	color: #004C00; text-decoration: none; border: 2px solid transparent;
+	letter-spacing: .1em; 
+}
+#index-nav { background-color: rgba(255,255,255,0);  }
+nav > ul > li > a:hover { border: 2px solid #004C00;}
+#menu_class, #menu_about, #menu_gallery  { background-color: #eafaea; border: 2px solid transparent;}
+#menu_class:hover, #menu_about:hover, #menu_gallery:hover { border: 2px solid #004C00;}
+
+/* Index - Section Tag */
+section.tag a{ 
+	font-family: 'Abel', sans-serif; font-size: 1em;  text-decoration: none; letter-spacing: .2em; 
+	position: absolute; left: 12%; bottom: 15%; padding: 20px;
+	color: #004C00; border: 2px solid black;
+}
+section.tag a:hover { color: white; background-color: #004C00; border: 2px solid #004C00; }
+div.bg-img-con{ position: absolute; top: 0; left: 0; z-index: -1; width:100%; }
+img.bg-img{ width: 100%; animation: fadein; animation-duration: 1s; }
+
+
+/* Main Container */
+main.main-con { padding: 100px 0 100px 0; }
+main.main-classes { padding: 100px 0 50px 0; }
+div.con{	width: 70%; vertical-align: top; margin-left: 15%; }
+
+hr { border: 0; border-top: 1px solid rgba(0, 0, 0, 0.1); border-bottom: 1px solid rgba(255, 255, 255, 0.3); height: 0; margin: 0; }
+
+
+/* Classes & Rates */
+table { 
+	position: fixed; left:0; right:0;
+	width: 80%; margin: 0 auto; padding: 10px; 
+	border: 2px solid black; font-size: .9em;  
+}
+table th { font-family: 'Abel', sans-serif; padding-top: 10px; letter-spacing: .2em; }
+
+
+/* The Centre */
+div.content-con{ min-height: 1px; padding-bottom: 20px;}
+div.team-con{  min-height: 1px; margin-top: 10%; }
+img.about-img{ width: 80%; margin: 2em 10%; }
+
+div.member-con { position: relative; }
+div.member-con article { min-height: 200px; }
+div.member-con article img { width: 200px; float:left; padding-right: 1.2em; }
+div.member-con article p.details{ font-family: 'Ubuntu', sans-serif; line-height: 1.em; }
+
+div.coach-con{ width: 100%;	margin-top: 5%; }
+div.coach-con .coach-img{ width: 180px; max-height: 180px; display: inline-block; overflow: hidden; }
+div.coach-img img{ width: 80%; padding: 10%; }
+div.coach-img img:hover{ opacity: 0.2; filter: alpha(opacity = 20);	}
+div.coach-con .coach-img .text-con{
+    max-width: 184px; max-height: 184px;
+    position: relative; bottom: 130px; left: 3px; z-index: -1;
+}
+
+div.maps{ width: 40%; display: inline-block; overflow: hidden; padding: 4%; }
+div.maps iframe { width: 100%; }
+div.content-con .maps h4 { letter-spacing: .4em; padding-top: .5em; }
+div.content-con .maps p { text-align: center; letter-spacing: .2em; line-height: 1.5em; margin-top: .5em; }
+
+
+/* Gallery */
+img.g-img{ width: 100%; padding: 1% 0; }
+img.g-img-ver{ width: 48%; padding: 1% 1%; float: left; } 
+
+
+/* Footer */
+footer { font-size: .8em; margin: 1.2em 10%; color: #999; }
+footer.footer { position: absolute; top: 95%; left: 85%; margin: 0; }
+
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Media Queries */
+@media screen and (max-width: 1200px) {
+	/* Text */
+	h1{ font-size: 2.4em; letter-spacing: .5em; margin-bottom: 1.8em; }
+	h4{ font-size: 1.2em;}
+
+	/* Header */
+	header { width: 260px; }
+	header a.logo { font-size: 1em; }
+	
+	/* Navigation */
+	nav { padding: 30px 0; }
+	nav > ul > li > a { padding: 10px; margin: 0 5px; }
+	
+	/* Footer */
+	footer.footer { top: 95%; left: 80%; }
+}
