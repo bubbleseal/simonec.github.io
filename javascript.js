@@ -1,5 +1,6 @@
 $(document).ready(function () {
 
+
     //Scrolling effect
     $('a[href*="#"]').click(function (event) {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')

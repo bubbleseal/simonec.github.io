@@ -1,6 +1,6 @@
-h1{ padding: 40px; color: #60365c; font-size: 3em; font-family: 'Dekko', cursive;}
-h2{ padding: 32px; color: #60365c; font-size: 2.2em; font-family: 'Dekko', cursive;}
-h3{ padding: 0; font-size: 1.4em; font-family: 'Dekko', cursive;}
+h1{ padding: 32px; color: #60365c; font-size: 3em; font-family: 'Alegreya Sans SC', sans-serif; font-weight: 900;}
+h2{ padding: 32px; color: #60365c; font-size: 2.2em; font-family: 'Alegreya Sans SC', sans-serif; font-weight: 700;}
+h3{ padding: 0; font-size: 1.4em; font-family: 'Alegreya Sans SC', sans-serif; font-weight: 400;}
 h4{ padding: 0; font-size: 1.2em; font-family: 'Open Sans', sans-serif;}
 p { font-family: 'Open Sans', sans-serif;} 
 
@@ -10,8 +10,8 @@ body {
 }
 
 section {
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 /*HEADER*/
@@ -62,7 +62,7 @@ header p {
     padding: 0; 
     margin: 0; 
     font-size: 1.6em;
-    font-family: 'Dekko', cursive;
+    font-family: 'Alegreya Sans SC', sans-serif;
 }
 
 .logo > div { 
@@ -176,7 +176,7 @@ nav {
     -webkit-transition: all .3s;
 }
 
-#work p {
+.work p {
     display: none;
     text-transform: uppercase;
     color: black;
@@ -245,25 +245,36 @@ nav {
     transition: all .2s ease-out .2s;
 }
 
-.website-container:hover .overlay {
-    top: 0; 
-}
+.website-container:hover .overlay { top: 0; }
 
 .website-container a {
   text-decoration: none;
-  text-transform: uppercase;
-  color: #fff;
+  color: #f7f7f7;
   font-size: 2em;
-  font-family: 'Dekko', cursive;
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 700;
   margin: 0; padding: 0;
 
   -webkit-transition: transform .2s ease-in-out;
   transition: transform .2s ease-in-out;
 }
 
-.website-container a:hover {
-  transform: scale(1.05);
+.website-container a:hover { transform: scale(1.05); }
+
+.git-container { padding: 30px 0; background: #a7779f;}
+.git-text { padding: 5px 20px; color: black; }
+.git-button{
+    margin: 0 20px;
+    background-color: #f7f7f7;
+    border-radius: .8em;
 }
+.git-img { 
+    height: 80px; margin: 15px;
+
+    transition: all .2s ease-in;
+}
+.git-button:hover .git-img {  height: 90px; margin: 10px; }
+
 
 /* SKILLS */
 #skills { 
@@ -301,7 +312,7 @@ nav {
     background: #e8eae8;
 }
 
-#bio h3{ font-size: 2em;}
+.bio-desc-title{ font-size: 1.7em; }
 
 .mobile-div{ display: none; }
 
@@ -326,15 +337,12 @@ nav {
   transform: scale(1.2) rotate(8deg);
 }
 
-.quote{
-    background: url('images/bg_coffee.png') no-repeat right;
-    background-size: 50%;
+.quote-container{
+    margin-top: 2.5em;
+    margin-bottom: 2.5em;
 }
 
-.quote h1 {
-    margin: 200px 0;
-    padding: 0;
-}
+.quote-desc { padding: 0; }
 
 .topbutton{
     height: 40px;
@@ -352,37 +360,38 @@ nav {
 }
 
 /* footer */
-footer {
-    background-color: #a7779f;
-}
-
+footer { background-color: #a7779f; }
 footer p {
-    margin: 0;
-    padding: 10px;
+    margin: 0; padding: 10px;
 }
+footer a { 
+    text-decoration: none;
+    color: black;
+ }
+ footer a:hover { 
+    text-decoration: none;
+    color: black;
+ }
 
-@media screen and (min-width:1025px) and (max-width: 1280px) {
+
+@media screen and (max-width: 1280px) {
      /*Navigation & Header*/
-    .logo {
-        height: 190px;
-        width: 190px;
-    }
+    .logo { height: 190px; width: 190px; }
 
     .nav-link { 
-        height: 50px;
-        width: 100px;
+        height: 50px; width: 100px;
         margin: 10px 40px;
     }
-
     .nav-link > img { height: 50px; }
+    .nav-desc { width: 90px; height: 50px; }
 
-    .nav-desc { 
-        width: 90px;
-        height: 50px;
-    }
+    .git-img { height: 70px; margin: 15px; }
+    .git-button:hover .git-img {  height: 60px; margin: 10px; }
+
+    .bio-desc-title { font-size: 1.5em; }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1024px) { 
+@media screen and (max-width: 1024px) { 
     /*Navigation & Header*/
     .logo {
         height: 170px;
@@ -395,15 +404,17 @@ footer p {
     }
 
     .nav-link > img { height: 50px; }
+
+    .bio-desc-title { font-size: 1.4em; }
+    
 }
 
 
 
 /*tablet size*/
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (max-width: 991px) {
     /*fonts*/
     .overlay > a { font-size: 1.5em; }
-    #bio h3 { font-size: 2.5em; text-align: center!important; }
     p { font-size: 20px; }
 
     /*Navigation & Header*/
@@ -438,15 +449,18 @@ footer p {
     .screen-div{ visibility: hidden; height: 30px; }
     header > div.row{ height: 500px; background-size: 120%; }
 
+    .git-container { padding: 20px 10px; }
+    .git-text { margin: 10px 0; }
+
+    .bio-desc-title { font-size: 2.4em; text-align: center!important; }
     .quote{ background-size: 40%; background-position: bottom right;} 
     .quote h1 { margin: 100px 0; }
 }
 
 /*landscape mobile*/
-@media screen and (min-width: 576px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
     /*fonts*/
     .overlay > a { font-size: 1em; }
-    #bio h3 { font-size: 2em; text-align: center!important; }
     p { font-size: 18px; }
 
     /*Navigation & Header*/
@@ -479,18 +493,22 @@ footer p {
     
     .tri-over, .overlay-bg, .overlay, .overlay > a { display: none; }
     .website { height: 80%;}
-    .mobile-link{ display: inline; }
-    #work p { display: inline; }
+    .mobile-link { display: inline; }
+    .work-container { padding-bottom: 0; }
+    .work p { display: inline; }
     .mobile-div{ display: inline; }
     .screen-div{ visibility: hidden; height: 30px; }
+
+    .bio-desc-title { font-size: 1.8em; text-align: center!important; }
     .quote{ background-size: 45%; background-position: bottom right;}
     .quote h1 { font-size: 2em; margin: 80px 0; }
 }
 
 @media screen and (max-width: 575px) {
     /*fonts*/
-    h1 { font-size: 2em; }
+    h1 { font-size: 3em; }
     h2 { font-size: 1.5em; }
+
 
     .mobile-title { 
         display: flex;
@@ -518,6 +536,14 @@ footer p {
     .mobile-nav .nav-desc {font-size: 1em; }
     .default-nav { display: none; }
     .nav-link > img { height: 20px; }
+
+    .mobile-div{ display: inline; }
+    .screen-div{ visibility: hidden; height: 30px; }
+    .bio-desc-title { 
+        font-size: 1.2em; 
+        font-weight: 600;
+        text-align: center!important;
+    }
 }
 
 @media screen and (max-width: 569px) and (orientation: landscape) {
@@ -526,7 +552,6 @@ footer p {
         width: 120px;
         padding: 20px;
     }
-
     .logo h2 { font-size: 1.5em; }
 
 }
